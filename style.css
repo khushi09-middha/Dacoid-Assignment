@@ -1,0 +1,337 @@
+* {
+    font-family: 'Montserrat';
+    font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+    /* Removes underline */
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.overall_padding {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container_child {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.intro_title {
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 100px;
+}
+
+.intro {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.rules_text {
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.intro_description {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.skip_button {
+    color: #9FB2FF;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 500;
+    align-self: end;
+    margin-bottom: 40px;
+}
+
+.container_column_whole {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container_column_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_column {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: start;
+}
+
+.container_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.gap {
+    margin-top: 270px;
+    margin-bottom: 270px;
+}
+
+.input-field {
+    background-color: #F1F1F1;
+    border: 0;
+    padding: 16px;
+    border-radius: 8px;
+    width: 343px;
+    margin-bottom: 20px;
+}
+
+.gradient_button {
+    background-image: linear-gradient(to right, #7B91FF, #95BEFF);
+    color: white;
+    width: 100%;
+    margin-bottom: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+
+}
+
+.next_button {
+    width: 60px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: end;
+    align-self: end;
+}
+
+hr {
+    color: black;
+    background-color: pink;
+}
+
+.redirect_intro_screen {
+    margin-left: auto;
+}
+
+.social_share {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.social_container {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    border: black solid 1px;
+    padding: 8px;
+    border-radius: 8px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.goal_check_container {
+    background-color: #F1F1F1;
+    padding: 4px 16px 4px 16px;
+    border-radius: 8px;
+    width: 343px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.goal_check_container_checkbox {
+    height: 22px;
+    width: 22px;
+    align-self: center;
+}
+
+.container_relative {
+    position: relative;
+    /* Ensure relative positioning for absolute positioning */
+    min-height: 100vh;
+    /* Ensure full height of the viewport */
+    padding-bottom: 60px;
+    /* Height of the navbar */
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+    /* Ensure navbar is above other content */
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.stacked-image {
+    position: fixed;
+    bottom: 20px;
+    /* Height of the navbar */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    /* Ensure image is above navbar */
+}
+
+.alert_box {
+    display: flex;
+    background: linear-gradient(to right, #303981, #FFFFFF);
+    justify-content: space-between;
+    font-size: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    height: 50px;
+    font-weight: 500px;
+    align-items: center;
+    gap: 16px;
+    background-attachment: fixed;
+
+}
+
+.alert_icon {
+    height: 20px;
+    width: 20px;
+}
+
+.workoutContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 25px 8px rgba(0, 0, 0, 0.1);
+    padding: 8px 16px 8px 16px;
+    font-weight: 500;
+    font-size: 12px;
+    height: 60px;
+}
+
+.switch {
+    margin-left: auto;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #8099FF;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #8099FF;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.blue_box{
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 120px;
+    width: 100% - 40px;
+    background-color: #8CB1FF;
+}
+
+.error_text{
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+    justify-content: center;
+    align-items: center;
+}
